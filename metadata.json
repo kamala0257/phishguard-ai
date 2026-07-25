@@ -1,0 +1,6 @@
+{
+  "name": "PhishGuard AI",
+  "description": "AI-Powered Phishing & Malicious URL Detection System with Real-Time Risk Analysis, Explainable AI, and Threat Intelligence.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
