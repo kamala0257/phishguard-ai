@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .grid-bg {
+    background-color: #020617;
+    background-image: radial-gradient(rgba(168, 85, 247, 0.15) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+
+  .glass {
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-card {
+    background: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(168, 85, 247, 0.2);
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 35px rgba(168, 85, 247, 0.25);
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 35px rgba(34, 211, 238, 0.25);
+  }
+
+  .glow-text-cyan {
+    text-shadow: 0 0 12px rgba(34, 211, 238, 0.6);
+  }
+
+  .glow-text-purple {
+    text-shadow: 0 0 12px rgba(168, 85, 247, 0.6);
+  }
+}
+
+@keyframes scanbeam {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.scan-beam {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #22d3ee, #c084fc, transparent);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  animation: scanbeam 3s ease-in-out infinite;
+}
